@@ -26,6 +26,13 @@ _These are my thoughts feel free to open issue in this repo to discuss this_
 - Provide [props default](https://vuetifyjs.com/en/features/global-configuration/#setup) like Vuetify
 - Provide [virtual components](https://vuetifyjs.com/en/features/global-configuration/#using-with-virtual-components) like Vuetify
 - Provide High level component like `<Alert title="CPU Usage is High!" />` for quick prototype & common usage and low level component unstyled component like RadixUI `<Alert><AlertTitle class="text-red font-weight-medium">CPU Usage is High!<AlertTitle></Alert>` for customizing structure and style of the component.
+- [Highly Opinionated] Props should be for functionality, class should be for styling & slots should be for content.
+- Component transitions should be [customizable](https://anu-vue.netlify.app/guide/features/transitions.html#customizing-transitions).
+
+## High Level Decisions
+
+- Use CSS where possible instead of JS to make it faster
+- Allow using any icon library and configuration to customize the icons used in high level component. E.g. Allow changing arrow icon in accordion or select component.
 
 ## Documentation
 
