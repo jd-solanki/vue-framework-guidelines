@@ -41,7 +41,7 @@ _These are my thoughts feel free to open issue in this repo to discuss this_
 - Documentation should be interactive. You can either make [code editable right in code snippet](https://mui.com/material-ui/react-button/#basic-button) or provide [link to open code snippet in your framework's playground](https://vuetifyjs.com/en/components/buttons/#density).
   - Ensure using [Vue REPL playground](https://play.vuejs.org/) instead of CodePen or Sandbox for quick interactivity.
  
-## Enterprice Solutions / Advanced
+## Enterprise Solutions / Advanced
 
 - Allow creating UI via text prompt. Refer to this amazing [tweet](https://twitter.com/zernonia/status/1742945562977251703).
 - Allow a way to generate code from Figma Design.
