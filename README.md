@@ -1,5 +1,14 @@
 # Vue Framework Guidelines
 
+<details>
+<summary>💭 Thoughts</summary>
+
+_These are my thoughts feel free to open issue in this repo to discuss this_
+
+- Q: I really like how nuxt is pluggable and we can extend it. It's great power when you use it, I wonder can UI framework be pluggable & extendable.
+
+</details>
+
 - Provide both a prop and a named slot for the same data for ultimate flexibility ([Tweet](https://twitter.com/danielkelly_io/status/1742564440287957489) - _tweet image don't use named slot but author mentioned it in thread_)
 - You can also go with vuetify's aprroach where you provide additional component with default slot for rendering custom content but with styles from framework.
   <details>
@@ -10,3 +19,13 @@
   </details>
 
 - For boolean props, use `is-` or `should-` prefix. E.g. `<SomeComponent is-active />`
+- Provide [props default](https://vuetifyjs.com/en/features/global-configuration/#setup) like Vuetify
+- Provide [virtual components](https://vuetifyjs.com/en/features/global-configuration/#using-with-virtual-components) like Vuetify
+- Provide High level component like `<Alert title="CPU Usage is High!" />` for quick prototype & common usage and low level component unstyled component like RadixUI `<Alert><AlertTitle class="text-red font-weight-medium">CPU Usage is High!<AlertTitle></Alert>` for customizing structure and style of the component.
+
+## Documentation
+
+- Ensure your component have API section and user can search though props,slots & events via single input
+  - [UX] If possible provide configuration to keep it on top or bottom of the page according to user preference.
+- Documentation should be interactive. You can either make [code editable right in code snippet](https://mui.com/material-ui/react-button/#basic-button) or provide [link to open code snippet in your framework's playground](https://vuetifyjs.com/en/components/buttons/#density).
+  - Ensure using [Vue REPL playground](https://play.vuejs.org/) instead of CodePen or Sandbox for quick interactivity.
