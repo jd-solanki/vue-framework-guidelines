@@ -28,6 +28,7 @@ _These are my thoughts feel free to open issue in this repo to discuss this_
 - Provide High level component like `<Alert title="CPU Usage is High!" />` for quick prototype & common usage and low level component unstyled component like RadixUI `<Alert><AlertTitle class="text-red font-weight-medium">CPU Usage is High!<AlertTitle></Alert>` for customizing structure and style of the component.
 - [Highly Opinionated] Props should be for functionality, class should be for styling & slots should be for content.
 - Component transitions should be [customizable](https://anu-vue.netlify.app/guide/features/transitions.html#customizing-transitions).
+- [Experimental & RnD] Allow overriding slots content once instead of writing same markup everywhere. E.g. We develop table component and provide pagination slot to override our pagination where we just proide left & right arrow to change page but user want pagination with numbers in this case user has to write same markup (Numbered Pagination) for overriding the pagination component everywhere table component is used. I don't have any way right now for implementing this but I guess @sxzz can help by somehow using [unplugin-macros](https://github.com/unplugin/unplugin-macros)
 
 ## High Level Decisions
 
