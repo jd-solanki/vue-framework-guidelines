@@ -39,6 +39,7 @@ _These are my thoughts feel free to open issue in this repo to discuss this_
 
 - Use `oklch` color format for better HDR colors
 - Use `color-mix` instead of opacity based color shades.
+- If possible distribute component/lib styles seperately as package (like preset/plugin) so users can set different styles for components if needed. Agencies can even create their personal preset for custom styling without worrying about breaking the components.
 
 ## Documentation
 
