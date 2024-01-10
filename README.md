@@ -35,6 +35,11 @@ _These are my thoughts feel free to open issue in this repo to discuss this_
 - Use CSS where possible instead of JS to make it faster
 - Allow using any icon library and configuration to customize the icons used in high level component. E.g. Allow changing arrow icon in accordion or select component.
 
+## CSS
+
+- Use `oklch` color format for better HDR colors
+- Use `color-mix` instead of opacity based color shades.
+
 ## Documentation
 
 - Ensure your component have API section and user can search though props,slots & events via single input
