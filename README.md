@@ -24,6 +24,7 @@ _These are my thoughts feel free to open issue in this repo to discuss this_
 
 - For boolean props, use `is-` or `should-` prefix. E.g. `<SomeComponent is-active />`
 - Provide [props default](https://vuetifyjs.com/en/features/global-configuration/#setup) like Vuetify and [PassThrough](https://primevue.org/passthrough) (for adding custom attributes) like PrimeVue
+- Allow passing custom/own directive to the component & it's child. I guess if you implement props defaults & PassThrough it might get covered. For example, adding ripple to all buttons, list item, list item's action button etc.
 - Provide [virtual components](https://vuetifyjs.com/en/features/global-configuration/#using-with-virtual-components) like Vuetify
 - Provide High level component like `<Alert title="CPU Usage is High!" />` for quick prototype & common usage and low level component unstyled component like RadixUI `<Alert><AlertTitle class="text-red font-weight-medium">CPU Usage is High!<AlertTitle></Alert>` for customizing structure and style of the component.
 - [Highly Opinionated] Props should be for functionality, class should be for styling & slots should be for content.
