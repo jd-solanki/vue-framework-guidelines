@@ -43,6 +43,7 @@ _These are my thoughts feel free to open issue in this repo to discuss this_
 
 - Allow overriding style via either some prop like Nuxt UI's `ui` or primeVue's `pt`. `<UButton :ui="{ icon: 'text-2xl' }">Button</UButton>` or there can be some CSS utility that allows styling children `for:.btn-icon:text-xl` (_syntax is invalid I guess_). This CSS based approach is more friendly to UnoCSS than Tailwind.
 - Component variants & sizes should be [defined by the preset](https://ui.nuxt.com/elements/button#config) instead of imposing them in component itself. _Following, props for functionality & CSS for styling._
+- Component text should get translated by developer when locale changes
 
 ## High Level Decisions
 
