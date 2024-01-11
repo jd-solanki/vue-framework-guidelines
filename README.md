@@ -11,6 +11,9 @@ _These are my thoughts feel free to open issue in this repo to discuss this_
 
 <br />
 
+- Framework API & Usage Stability should be key as consumer of the UI lib for longer term projects
+- DX & Speed should not get compromised as this allows developing app faster
+
 ## Component Design
 
 - Provide both a prop and a named slot for the same data for ultimate flexibility ([Tweet](https://twitter.com/danielkelly_io/status/1742564440287957489) - _tweet image don't use named slot but author mentioned it in thread_)
