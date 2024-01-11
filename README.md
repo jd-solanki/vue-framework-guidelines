@@ -40,6 +40,15 @@ _These are my thoughts feel free to open issue in this repo to discuss this_
 - Use `oklch` color format for better HDR colors
 - Use `color-mix` instead of opacity based color shades.
 - If possible distribute component/lib styles seperately as package (like preset/plugin) so users can set different styles for components if needed. Agencies can even create their personal preset for custom styling without worrying about breaking the components.
+- I noticed some great UI libraries like NuxtUI provides JS object to style the component. Furthermore, libs like MUI & PrimeVue takes it even further and allow you to style the components based on passed props like below:
+
+  ```ts
+  export default {
+      root: ({ props, context, parent }) => ({ ... })
+  }
+  ```
+
+  However, according to me it'll be more flexible if we use class (or attr) based approach instead where we just add a class if prop is used. For example, add `btn-disabled` class (or attr) when `disabled` prop is used. This makes flexible enough that even user viewing the site can even customize based on behavior of the component if they like. To encourage this, `:has` selector now supported in all browsers so I guess there's only one down side to this approach is now and that is component might end up with too much classes of we have many props.
 
 ## Documentation
 
