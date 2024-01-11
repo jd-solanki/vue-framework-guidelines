@@ -30,6 +30,12 @@ _These are my thoughts feel free to open issue in this repo to discuss this_
 - [Highly Opinionated] Props should be for functionality, class should be for styling & slots should be for content.
 - Component transitions should be [customizable](https://anu-vue.netlify.app/guide/features/transitions.html#customizing-transitions).
 - [Experimental & RnD] Allow overriding slots content once instead of writing same markup everywhere. E.g. We develop table component and provide pagination slot to override our pagination where we just proide left & right arrow to change page but user want pagination with numbers in this case user has to write same markup (Numbered Pagination) for overriding the pagination component everywhere table component is used. I don't have any way right now for implementing this but I guess @sxzz can help by somehow using [unplugin-macros](https://github.com/unplugin/unplugin-macros)
+- When providing colors of the components (like button colors, alert colors) leave it to the preset so that it allows adding or removing colors however the developer like. To achieve this you can set CSS color in style attr and let CSS apply text color or bg color by using CSS var defined in style attribute. This also allow defining the arbitrary colors. Finally, You have to take care of text color accessibility when some light color is used.
+
+  ```html
+  <button style="--component-color: primary" />
+  <button style="--component-color: #111" />
+  ```
 
 ## High Level Decisions
 
