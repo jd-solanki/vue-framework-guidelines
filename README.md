@@ -59,6 +59,8 @@ _These are my thoughts feel free to open issue in this repo to discuss this_
 
   However, according to me it'll be more flexible if we use class (or attr) based approach instead where we just add a class if prop is used. For example, add `btn-disabled` class (or attr) when `disabled` prop is used. This makes flexible enough that even user viewing the site can even customize based on behavior of the component if they like. To encourage this, `:has` selector now supported in all browsers so I guess there's only one down side to this approach is now and that is component might end up with too much classes of we have many props.
 
+- (_Optional_) Allow changing preset/theme on the fly for preview
+
 ## Documentation
 
 - Ensure your component have API section and user can search though props,slots & events via single input
