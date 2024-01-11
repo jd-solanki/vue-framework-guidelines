@@ -13,6 +13,7 @@ _These are my thoughts feel free to open issue in this repo to discuss this_
 
 - Framework API & Usage Stability should be key as consumer of the UI lib for longer term projects
 - DX & Speed should not get compromised as this allows developing app faster
+- Do consider the RTL
 
 ## Component Design
 
