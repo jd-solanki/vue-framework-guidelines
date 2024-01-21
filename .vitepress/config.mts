@@ -20,11 +20,12 @@ export default defineConfig({
       ],
       '/components': [
         { text: 'Accordion', link: '/components/accordion' },
+        { text: 'Accordion Item', link: '/components/accordion-item' },
       ],
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/jd-solanki/vue-framework-guidelines' }
     ]
   }
 })
