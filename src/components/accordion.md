@@ -1,5 +1,13 @@
 # Accordion
 
+:::details Example Usage
+
+- [FAQ](https://dribbble.com/shots/21694708-Frequently-Asked-Questions-FAQs-Untitled-UI)
+- [Schedule](https://dribbble.com/shots/20152811-Combo-Scheduled-videos)
+- [Navigation](https://dribbble.com/shots/2702664-Responsive-Sidebar)
+- [Form](https://dribbble.com/shots/19103913-Accordion-components-for-Figma-Frames-X)
+:::
+
 ## Props
 
 - `disabled`: Make accordion disabled
