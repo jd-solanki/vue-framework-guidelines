@@ -11,7 +11,7 @@ These are my thoughts feel free to open issue/PR in this repo to discuss this
 - Framework API & Usage Stability is important because users don't actively work on same project forever
 - DX & Speed should not get compromised as this allows developing app faster
 - Do consider the RTL & I18n
-- When user consumes your component framework and customize it their code shouldn't have to be duplicated due to framework limitations. Check [this](/scenarios.html#table-component-pagination-slot) scenario.
+- When user consumes your component framework and customize it their code shouldn't have to be duplicated due to framework limitations. Check [this](/guide/scenarios.html#table-component-pagination-slot) scenario.
 
 :::details My Thoughts
 
