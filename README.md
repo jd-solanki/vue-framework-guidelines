@@ -44,6 +44,7 @@ _These are my thoughts feel free to open issue in this repo to discuss this_
 - Allow overriding style via either some prop like Nuxt UI's `ui` or primeVue's `pt`. `<UButton :ui="{ icon: 'text-2xl' }">Button</UButton>` or there can be some CSS utility that allows styling children `for:.btn-icon:text-xl` (_syntax is invalid I guess_). This CSS based approach is more friendly to UnoCSS than Tailwind.
 - Component variants & sizes should be [defined by the preset](https://ui.nuxt.com/elements/button#config) instead of imposing them in component itself. _Following, props for functionality & CSS for styling._
 - Component text should get translated by developer when locale changes
+- Provide a way to override specific slot for all component instances at one place. E.g. Table pagination slots can just have arrows in your component framework but developer might need numbered pagination so we can allow define render/callback function while registering plugin to override this pagination slot. Pass all props to this render/callback function so it can render the UI accordiongly. Also, Allow ignoring this per component usage for cases when user creates completely new custom component on top of our component.
 
 ## High Level Decisions
 
@@ -79,3 +80,58 @@ _These are my thoughts feel free to open issue in this repo to discuss this_
 
 - Allow creating UI via text prompt. Refer to this amazing [tweet](https://twitter.com/zernonia/status/1742945562977251703).
 - Allow a way to generate code from Figma Design.
+
+## Component Implementation Details
+
+<details>
+  <summary>Accordion</summary>
+
+#### Props
+
+- **Disabled**: Make accordion disabled
+- **items**: Array of accordion items (props).
+
+#### Slots
+
+- **before-title**: Render content before title for each accordion item. E.g. icon, checkbox, badge, etc. Expose looping accordion item as slot prop.
+- **title**: Rendering custom title other than just plain text. Expose looping accordion item as slot prop.
+- **after-title**: Render content after title for each accordion item. E.g. arrow/close icon, badge, etc. Expose looping accordion item as slot prop.
+- **$dynamic-content**: Slot for rendering each accordion item content. Slot name will be dynamically generated for each accordion item based on `value` prop or `index` if `value` prop is not provided. e.g. `0-content` when vlaue prop is not provide, `options-content` here `options` is value prop for accordion item.
+  
+</details>
+
+<details>
+  <summary>Accordion Item</summary>
+
+#### Props
+- **icon**: Icon for rendering before title. Icon will render in `before-title` slot so using `before-title` along with icon prop will discard this prop.
+- **title**: item title.
+- **value**: accordion item value to use for v-model and slot naming
+
+#### Slots
+- none
+
+#### Events
+- none
+  
+</details>
+
+<!--
+
+Use it for copy-paste
+
+<details>
+  <summary>Component</summary>
+
+#### Props
+- none
+
+#### Slots
+- none
+
+#### Events
+- none
+  
+</details>
+
+-->
